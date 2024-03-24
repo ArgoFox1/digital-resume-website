@@ -22,6 +22,7 @@ EMAIL = "metinemirhan6@gmail.com"
 SOCIAL_MEDIA = {
     "LinkedIn": "https://www.linkedin.com/in/emirhan-metin-171856234/",
     "GitHub": "https://github.com/ArgoFox1",
+    "CVwebsite": "https://emirhanmetincv.onrender.com/",
 }
 PROJECTS = {
     "🏆 Docker-K8S-JavaApp": "https://github.com/ArgoFox1/Docker-K8S-JavaApp",
