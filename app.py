@@ -1,3 +1,5 @@
+import threading
+import time
 from pathlib import Path
 
 import streamlit as st
@@ -32,7 +34,7 @@ PROJECTS = {
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 
-# --- LOAD CSS, PDF & PROFIL PIC ---
+# --- LOAD CSS, PDF & PROFILE PIC ---
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
@@ -66,7 +68,7 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 
 # --- EXPERIENCE & QUALIFICATIONS ---
 st.write('\n')
-st.subheader("Experience & Qulifications")
+st.subheader("Experience & Qualifications")
 st.write(
     """
 - ✔️ 1 year interested in DevOps Engineering
@@ -104,7 +106,7 @@ st.write("06/2020 - 12/2020")
 
 # --- CERTS ---
 st.write('\n')
-st.subheader("CERTS")
+st.subheader("Certificates")
 st.write(
     """
 - **DOCKER**  - [Certificate Link](https://www.udemy.com/certificate/UC-436e05a0-76ac-4b34-88fd-add42fb6dcf9/)
@@ -116,13 +118,24 @@ st.write(
 - **Linux401** - [Certificate Link](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgelecegiyazanlar.turkcell.com.tr%2Fcertificate%2FdWlkMjk5OTY4Y2lkMzU1cWlkMTAwZW5k)
 - **SQL** - [Certificate Link](https://drive.google.com/file/d/1Yvbxj4wfQTy2rF_4zydIhXLXVRJvEkNN/view)
 - **TSQL** - [Certificate Link](https://drive.google.com/file/d/1kD-gIU1Vt3lfB9bXXE3Qd6V_XLBD5yQr/view)
-- **DataBase Security** - [Certificate Link](https://drive.google.com/file/d/1-zvQiAtknRbe7YTGmvKTCYuZbARjpWy_/view)
+- **Database Security** - [Certificate Link](https://drive.google.com/file/d/1-zvQiAtknRbe7YTGmvKTCYuZbARjpWy_/view)
 
 """
 )
+
 # --- Projects & Accomplishments ---
 st.write('\n')
 st.subheader("Projects & Accomplishments")
 st.write("---")
 for project, link in PROJECTS.items():
     st.write(f"[{project}]({link})")
+
+# --- Background Thread to Keep Application Active ---
+def keep_alive():
+    while True:
+        print("Uygulama aktif tutuluyor...")
+        time.sleep(840)  # 14 dakika bekleyin (14 dakika = 840 saniye)
+
+# Arka planda keep_alive fonksiyonunu çalıştır
+thread = threading.Thread(target=keep_alive)
+thread.start()
