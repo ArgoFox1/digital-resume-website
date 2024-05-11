@@ -9,7 +9,7 @@ from PIL import Image
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
-resume_file = current_dir / "assets" / "CV.pdf"
+resume_file = current_dir / "assets" / "CV2.pdf"
 profile_pic = current_dir / "assets" / "profile-pic.png"
 
 
@@ -76,7 +76,7 @@ st.write(
 - ✔️ Strong Knowledge on configuring and troubleshooting of server applications on Kubernetes and Docker
 - ✔️ Good understanding of CI/CD principles with Jenkins
 - ✔️ Knowledge of SQL
-- ✔️ Knowledge of Logging, Monitoring, Tracing tools such as Grafana, Prometheus, EKS, Kibana, Docker Metrics
+- ✔️ Knowledge of Logging, Monitoring, Tracing tools such as Grafana, Prometheus, ELK, Kibana, Docker Metrics
 - ✔️ Excellent team-player and displaying a strong sense of initiative on tasks
 - ✔️ Excellent Troubleshooting
 """
