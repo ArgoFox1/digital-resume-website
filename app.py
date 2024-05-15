@@ -11,6 +11,7 @@ current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV4.pdf"
 profile_pic = current_dir / "assets" / "profile-pic.png"
+project1_pic = current_dir / "assets" / "project_pic"
 
 
 # --- GENERAL SETTINGS ---
@@ -29,6 +30,7 @@ SOCIAL_MEDIA = {
 PROJECTS = {
     "🏆 Docker-K8S-JavaApp": "https://github.com/ArgoFox1/Docker-K8S-JavaApp",
     "🏆 Docker-K8S-NativeMonitoring-App": "https://github.com/ArgoFox1/Docker-K8S-NativeMonitoring-App",
+    st.image(project1_pic, use_column_width=True)
     "🏆 Digital-Resume On Website": "https://github.com/ArgoFox1/digital-resume-website",
 }
 
@@ -72,14 +74,15 @@ st.write('\n')
 st.subheader("Experience & Qualifications")
 st.write(
     """
-- ✔️ 1 year interested in DevOps Engineering
 - ✔️ Strong Knowledge on Docker, Kubernetes, Shell & Bash Scripting, AWS
 - ✔️ Strong Knowledge on configuring and troubleshooting of server applications on Kubernetes and Docker
 - ✔️ Good understanding of CI/CD principles with Jenkins
 - ✔️ Knowledge of SQL
 - ✔️ Knowledge of Logging, Monitoring, Tracing tools such as Grafana, Prometheus, ELK, Kibana, Docker Metrics
+- ✔️ Game development background for 2 years  using C# on Unity
 - ✔️ Excellent team-player and displaying a strong sense of initiative on tasks
 - ✔️ Excellent Troubleshooting
+
 """
 )
 
