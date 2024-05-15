@@ -29,6 +29,7 @@ SOCIAL_MEDIA = {
 PROJECTS = {
     "🏆 Docker-K8S-JavaApp": "https://github.com/ArgoFox1/Docker-K8S-JavaApp",
     "🏆 Docker-K8S-NativeMonitoring-App": "https://github.com/ArgoFox1/Docker-K8S-NativeMonitoring-App",
+    "🏆 Digital-Resume On Website": "https://github.com/ArgoFox1/digital-resume-website",
 }
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
