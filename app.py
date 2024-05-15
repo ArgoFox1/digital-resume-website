@@ -11,7 +11,6 @@ current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV4.pdf"
 profile_pic = current_dir / "assets" / "profile-pic.png"
-project1_pic = current_dir / "assets" / "project_pic"
 
 
 # --- GENERAL SETTINGS ---
@@ -30,7 +29,6 @@ SOCIAL_MEDIA = {
 PROJECTS = {
     "🏆 Docker-K8S-JavaApp": "https://github.com/ArgoFox1/Docker-K8S-JavaApp",
     "🏆 Docker-K8S-NativeMonitoring-App": "https://github.com/ArgoFox1/Docker-K8S-NativeMonitoring-App",
-    st.image(project1_pic, use_column_width=True)
     "🏆 Digital-Resume On Website": "https://github.com/ArgoFox1/digital-resume-website",
 }
 
