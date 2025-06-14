@@ -18,7 +18,7 @@ PAGE_TITLE = "Digital CV | Emirhan Metin"
 PAGE_ICON = ":wave:"
 NAME = "Emirhan Metin"
 DESCRIPTION = """
-DevOps Engineer
+DevOps Engineer / Linux System Administrator
 """
 EMAIL = "metinemirhan6@gmail.com"
 SOCIAL_MEDIA = {
@@ -27,9 +27,10 @@ SOCIAL_MEDIA = {
     "CVwebsite": "https://emirhanmetincv.onrender.com/",
 }
 PROJECTS = {
-    "🏆 Docker-K8S-JavaApp": "https://github.com/ArgoFox1/Docker-K8S-JavaApp",
-    "🏆 Docker-K8S-NativeMonitoring-App": "https://github.com/ArgoFox1/Docker-K8S-NativeMonitoring-App",
-    "🏆 Digital-Resume On Website": "https://github.com/ArgoFox1/digital-resume-website",
+    "🏆 LibraryManagement-AWS-GitLab-CICD": "https://github.com/ArgoFox1/LibraryManagement-AWS-GitLab-CICD",
+    "🏆 ocker-Kubernetes-JavaApp": "https://github.com/ArgoFox1/Docker-Kubernetes-JavaApp",
+    "🏆 gitlab-kubernetes-ci-cd": "https://github.com/ArgoFox1/gitlab-kubernetes-ci-cd",
+    "🏆 Docker-Kubernetes-NativeMonitoring-App": "https://github.com/ArgoFox1/Docker-Kubernetes-NativeMonitoring-App",
 }
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
@@ -125,19 +126,15 @@ st.write(
 """
 )
 
-# --- Projects & Accomplishments ---
 st.write('\n')
 st.subheader("Projects & Accomplishments")
 st.write("---")
 for project, link in PROJECTS.items():
     st.write(f"[{project}]({link})")
 
-# --- Background Thread to Keep Application Active ---
 def keep_alive():
     while True:
-        print("Uygulama aktif tutuluyor...")
-        time.sleep(840)  # 14 dakika bekleyin (14 dakika = 840 saniye)
+        time.sleep(840)  
 
-# Arka planda keep_alive fonksiyonunu çalıştır
 thread = threading.Thread(target=keep_alive)
 thread.start()
