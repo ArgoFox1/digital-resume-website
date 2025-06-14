@@ -28,7 +28,7 @@ SOCIAL_MEDIA = {
 }
 PROJECTS = {
     "🏆 LibraryManagement-AWS-GitLab-CICD": "https://github.com/ArgoFox1/LibraryManagement-AWS-GitLab-CICD",
-    "🏆 ocker-Kubernetes-JavaApp": "https://github.com/ArgoFox1/Docker-Kubernetes-JavaApp",
+    "🏆 Docker-Kubernetes-JavaApp": "https://github.com/ArgoFox1/Docker-Kubernetes-JavaApp",
     "🏆 gitlab-kubernetes-ci-cd": "https://github.com/ArgoFox1/gitlab-kubernetes-ci-cd",
     "🏆 Docker-Kubernetes-NativeMonitoring-App": "https://github.com/ArgoFox1/Docker-Kubernetes-NativeMonitoring-App",
 }
